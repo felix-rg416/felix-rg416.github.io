@@ -12,7 +12,7 @@
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5%;
+    padding: 2rem 3%;
     /* es "2rem 5%" para que sea una medida variable en vez de usar px fijos */
   }
 
@@ -47,7 +47,8 @@
   /* === PROYECTOS === */
 
   .proyectos {
-    display: grid;
+    overflow-x: hidden;
+    display: block;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 0 5% 5rem 5%;
@@ -121,6 +122,51 @@
     border: 1px solid #999;
   }
 
+  /* === CARRUSEL DE PROYECTOS === */
+  /* 27/05/2026 */
+
+  .row-inner {
+    overflow: hidden;
+    display: block;
+    gap: 8px;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+    flex-shrink: 0;
+  }
+
+  .row-inner img {
+    height: 200px;
+    /* ajusta a tu gusto */
+    width: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+
+  .row-inner.reverse {
+    animation: scroll-right 30s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(-50%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes scroll-right {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
   /* --- contenido --- */
 
   .p-content {
@@ -184,10 +230,6 @@
     object-fit: cover;
     background-color: #252829;
   }
-
-
-
-
 
 
   /* === MEDIA QUERY (para celulares) === */
