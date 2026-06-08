@@ -130,7 +130,7 @@
     display: block;
     gap: 8px;
     width: max-content;
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 70s linear infinite;
     flex-shrink: 0;
   }
 
@@ -144,7 +144,7 @@
   }
 
   .row-inner.reverse {
-    animation: scroll-right 30s linear infinite;
+    animation: scroll-right 70s linear infinite;
   }
 
   @keyframes scroll-left {
