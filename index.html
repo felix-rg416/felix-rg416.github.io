@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Félix Rodríguez</title>
+    <title>Félix Rodríguez — Diseño Industrial</title>
+    <meta name="description"
+        content="Portafolio de Félix Rodríguez, estudiante de Diseño Industrial en la Universidad Diego Portales. Proyectos de UX, fabricación digital y trabajo en madera." />
     <link rel="stylesheet" href="https://use.typekit.net/rlo4oiq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,98 +18,104 @@
 
     <header>
         <nav>
-            <a href="sobreMi.html" class="nav-right">sobre mí</a>
+            <a href="index.html" class="nav-left">Félix Rodríguez</a>
+            <div class="nav-links">
+                <a href="index.html" class="is-active">home</a>
+                <a href="proyectos.html">proyectos</a>
+                <a href="sobreMi.html">sobre mí</a>
+            </div>
         </nav>
+    </header>
 
-        <div class="hero">
+    <main>
+        <section class="hero">
             <h1>Félix Rodríguez</h1>
 
-            <!-- <p>
-                Diseñador Industrial con enfoque en UX, programación, electrónica y fabricación digital.
-                Con habilidades de diseño, prototipado, programación y electrónica.
-            </p> -->
+            <p class="tagline">
+                Diseñador con habilidades en madera, modelado 3D, prototipado, programación y electrónica.
+                Con conocimiento y experiencia en interacción digital y diseño de usuario.
+            </p>
 
-            <section class="proyectos">
+            <a href="proyectos.html" class="cta">Ver proyectos</a>
 
-                <!-- Fila 1 → va a la izquierda -->
-                <div class="carousel-row">
-                    <div class="row-inner">
-                        <img src="assets/codigo-ux/feelMyParanoia/feellMyParanoia.png" />
-                        <img src="assets/codigo-ux/maquinaAsombrosa/maquinaAsombrosa.png" />
-                        <img src="assets/codigo-ux/poemario/poemario.png" />
-                        <img src="assets/codigo-ux/bancoChile/bancoChile.png" />
+            <div class="home-grid">
 
+                <a href="projects/feelMyParanoia.html" class="home-tile">
+                    <img src="assets/codigo-ux/feelMyParanoia/feellMyParanoia.png" alt="Feel My Paranoia" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-ux">Código &amp; UX</span>
+                        <span class="home-tile-title">Feel My Paranoia</span>
+                    </span>
+                </a>
 
-                        <!-- copia 2 -->
-                        <img src="assets/codigo-ux/feelMyParanoia/feellMyParanoia.png" />
-                        <img src="assets/codigo-ux/maquinaAsombrosa/maquinaAsombrosa.png" />
-                        <img src="assets/codigo-ux/poemario/poemario.png" />
-                        <img src="assets/codigo-ux/bancoChile/bancoChile.png" />
+                <a href="projects/beatBlock.html" class="home-tile">
+                    <img src="assets/fabDigital/beatBlock/beatBlock.png" alt="Beat Block" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-fabdigital">Fab. digital</span>
+                        <span class="home-tile-title">Beat Block</span>
+                    </span>
+                </a>
 
-                        <!-- copia 3 -->
-                        <img src="assets/codigo-ux/feelMyParanoia/feellMyParanoia.png" />
-                        <img src="assets/codigo-ux/maquinaAsombrosa/maquinaAsombrosa.png" />
-                        <img src="assets/codigo-ux/poemario/poemario.png" />
-                        <img src="assets/codigo-ux/bancoChile/bancoChile.png" />
+                <a href="projects/desarmar.html" class="home-tile">
+                    <img src="assets/madera/des-arma/des-arma.jpg" alt="Des-armar" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-madera">Madera</span>
+                        <span class="home-tile-title">Des-armar</span>
+                    </span>
+                </a>
 
-                        <!-- copia 4 -->
-                        <img src="assets/codigo-ux/feelMyParanoia/feellMyParanoia.png" />
-                        <img src="assets/codigo-ux/maquinaAsombrosa/maquinaAsombrosa.png" />
-                        <img src="assets/codigo-ux/poemario/poemario.png" />
-                        <img src="assets/codigo-ux/bancoChile/bancoChile.png" />
-                    </div>
-                </div>
+                <a href="projects/bancoChile.html" class="home-tile">
+                    <img src="assets/codigo-ux/bancoChile/bancoChile.png" alt="App Banco de Chile" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-ux">Código &amp; UX</span>
+                        <span class="home-tile-title">App Banco de Chile</span>
+                    </span>
+                </a>
 
-                <!-- Fila 2 → va a la derecha -->
-                <div class="carousel-row">
-                    <div class="row-inner reverse">
-                        <img src="assets/madera/des-arma/des-arma.jpg" />
-                        <img src="assets/madera/velador/velador.jpg">
+                <a href="projects/tulipan.html" class="home-tile">
+                    <img src="assets/fabDigital/tulipan/tulipan.png" alt="Tulipán" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-fabdigital">Fab. digital</span>
+                        <span class="home-tile-title">Tulipán</span>
+                    </span>
+                </a>
 
-                        <!-- copia 2 -->
-                        <img src="assets/madera/des-arma/des-arma.jpg" />
-                        <img src="assets/madera/velador/velador.jpg">
+                <a href="projects/velador.html" class="home-tile">
+                    <img src="assets/madera/velador/velador.png" alt="Velador" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-madera">Madera</span>
+                        <span class="home-tile-title">Velador</span>
+                    </span>
+                </a>
 
-                        <!-- copia 3 -->
-                        <img src="assets/madera/des-arma/des-arma.jpg" />
-                        <img src="assets/madera/velador/velador.jpg">
+                <a href="projects/poemario.html" class="home-tile">
+                    <img src="assets/codigo-ux/poemario/poemario.png" alt="Poemario" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-ux">Código &amp; UX</span>
+                        <span class="home-tile-title">Poemario</span>
+                    </span>
+                </a>
 
-                        <!-- copia 4 -->
-                        <img src="assets/madera/des-arma/des-arma.jpg" />
-                        <img src="assets/madera/velador/velador.jpg">
-                    </div>
-                </div>
+                <a href="projects/tornado.html" class="home-tile">
+                    <img src="assets/fabDigital/tornado/tornado-2.jpeg" alt="Tornado" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-fabdigital">Fab. digital</span>
+                        <span class="home-tile-title">Tornado</span>
+                    </span>
+                </a>
 
-                <!-- Fila 3 → va a la izquierda -->
-                <div class="carousel-row">
-                    <div class="row-inner">
-                        <img src="assets/fabDigital/beatBlock/beatBlock.png" />
-                        <img src="assets/fabDigital/tulipan/tulipan.png">
-                        <img src="assets/fabDigital/tornado/tornado-2.jpeg" />
-                        <!-- <img src="assets/fabDigital/auna/auna.png" /> -->
+                <a href="projects/maquinaAsombrosa.html" class="home-tile">
+                    <img src="assets/codigo-ux/maquinaAsombrosa/maquinaAsombrosa.png" alt="Máquina Asombrosa" />
+                    <span class="home-tile-info">
+                        <span class="tag tag-ux">Código &amp; UX</span>
+                        <span class="home-tile-title">Máquina Asombrosa</span>
+                    </span>
+                </a>
 
-                        <!-- copia 2 -->
-                        <img src="assets/fabDigital/beatBlock/beatBlock.png" />
-                        <img src="assets/fabDigital/tulipan/tulipan.png">
-                        <img src="assets/fabDigital/tornado/tornado-2.jpeg" />
-                        <!-- <img src="assets/fabDigital/auna/auna.png" /> -->
-                        
-                        <!-- copia 3 -->
-                        <img src="assets/fabDigital/beatBlock/beatBlock.png" />
-                        <img src="assets/fabDigital/tulipan/tulipan.png">
-                        <img src="assets/fabDigital/tornado/tornado-2.jpeg" />
-                        <!-- <img src="assets/fabDigital/auna/auna.png" /> -->
-                        
-                        <!-- copia 4 -->
-                        <img src="assets/fabDigital/beatBlock/beatBlock.png" />
-                        <img src="assets/fabDigital/tulipan/tulipan.png">
-                        <img src="assets/fabDigital/tornado/tornado-2.jpeg" />
-                        <!-- <img src="assets/fabDigital/auna/auna.png" /> -->
-                        
-                    </div>
-                </div>
+            </div>
+        </section>
+    </main>
 
-            </section>
 </body>
 
 </html>
